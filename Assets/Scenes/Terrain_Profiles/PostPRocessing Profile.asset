@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6050e2d5de785ce4d931e4dbdbf2d755, type: 3}
   m_Name: ChromaticAberration
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
@@ -1337,6 +1337,40 @@ MonoBehaviour:
       - 0.5
       - 0.5
       - 0.5
+--- !u!114 &-2373721357631624853
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b77c5407dc277943b591ade9e6b18c5, type: 3}
+  m_Name: LensDistortion
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 0
+  intensityX:
+    overrideState: 1
+    value: 1
+  intensityY:
+    overrideState: 1
+    value: 1
+  centerX:
+    overrideState: 1
+    value: 0
+  centerY:
+    overrideState: 1
+    value: 0
+  scale:
+    overrideState: 1
+    value: 1
 --- !u!114 &-381767008865839587
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1349,7 +1383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65e486e4de6e5448a8fbb43dc8756a0, type: 3}
   m_Name: Grain
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
@@ -1382,6 +1416,7 @@ MonoBehaviour:
   - {fileID: -8052046698668283113}
   - {fileID: -381767008865839587}
   - {fileID: -7181781310824348659}
+  - {fileID: -2373721357631624853}
 --- !u!114 &4281225445078377703
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1403,10 +1438,10 @@ MonoBehaviour:
     value: 3
   aperture:
     overrideState: 1
-    value: 0.7
+    value: 0.8
   focalLength:
     overrideState: 1
     value: 19
   kernelSize:
-    overrideState: 0
-    value: 1
+    overrideState: 1
+    value: 0
